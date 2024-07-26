@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+}
+/* navbar */
+ nav{
+    width: 100vw;
+    height: 5rem;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+nav img{
+    padding-left: 10px;
+   
+}
+#one{
+    flex-grow: 1;
+}
+nav h1{
+    display: inline;
+}
+nav p{
+    color:grey
+}
+nav ul li{
+    display: inline;
+    padding-right: 60px;
+} 
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: rgb(155, 140, 121);
+    
+}
+
+/* Conatiner */
+#container{
+   height: 90vh;
+    width: 100vw;
+   display: flex;
+}
+#container #image{
+  width: 60vw;
+  background-image: url('https://cdn.pixabay.com/photo/2023/11/17/11/18/ai-generated-8394105_640.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100% 
+}
+#container #bookingform{
+ width: 40vw;
+}
+ #container select,input[type="date"]{
+    width: 30em;
+    height: 4em;
+    margin-bottom: 20px;
+}
+#container p{
+    font-size: 40px;
+}
+#container #bookingform{
+  padding-top: 70px;
+   padding-left: 50px;  
+  background-color: rgb(202, 63, 12);
+ color:white;
+}
+form{
+    margin-top: 30px;
+}
+input[type="submit"],input[type="reset"]
+{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    height: 30px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}  
+input[type="submit"]:hover,input[type="reset"]:hover{
+   background-color: rgb(51, 30, 3);
+}
+input[type="submit"]:active,input[type="reset"]:active{
+    background-color: blueviolet;
+}
+/* Media query*/
+@media screen and (min-width: 600px) {
+    nav ul {
+      /* Apply some styles */
+    }
+  }
